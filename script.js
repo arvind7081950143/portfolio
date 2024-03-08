@@ -3,6 +3,8 @@
 // add - add class
 // remove - remove class
 // toggle - toggles class
+const date = document.getElementById("date");
+date.innerHTML = new Date().getFullYear();
 
 const navToggle = document.querySelector(".btn");
 const links = document.querySelector(".links");
