@@ -157,49 +157,49 @@ main {
   display: grid;
   place-items: center;
 }
-.servicehave{
+/* start project css */
+.project{
     width: 100%;
     height: auto;
-    /* background-color: #2E2F2F; */
 }
-.servicehave h3{
-  text-align: center;
-  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-  font-weight: bold;
-}
-.servicehave h3 span{
-  color: darkgoldenrod;
-  border-bottom: 2px solid darkgoldenrod;
-}
-.servicecontainer{
+.project-container{
     width: 95%;
     height: auto;
     margin: auto;
-    padding: 5px;
+    padding: 2%;
 }
-.servicecontainer div{
-    width: 24.2%;
-    height: 185px;
-    margin: 3px;
+.project-container div{
+    width: 100%;
+    height: 180px;
+    text-align: center;
     background-color: var(--clr-white);
-    display: inline-block;
-    font-size: 10px;
-    box-shadow: 0px 0px 3px 1px gray;
+    margin: 4px;
 }
-.servicecontainer div h4{
-    margin: 5px;
-}
-.servicecontainer div p{
-    margin: 8px;
-}
-.servicecontainer div:hover{
-    background-color: var(--clr-primary-2);
-    color: var(--clr-white);
-    
-}
-@media screen and (max-width: 800px) {
-    .servicecontainer div{
-        width: 98%;
+@media screen and (min-width: 992px) {
+    .project-container div{
+        width: 23.99%;
         height: 180px;
+        display: inline-block;
     }
+  }
+.btnproject {
+    width: 100px;
+    height: 40px;
+    text-transform: uppercase;
+    background-color:gold;
+    color: var(--clr-black);
+    padding: 0.375rem 0.75rem;
+    letter-spacing: var(--spacing);
+    display: inline-block;
+    transition: var(--transition);
+    font-size: 0.875rem;
+    border: 2px solid var(--clr-primary-1);
+    cursor: pointer;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.2);
+    border-radius: var(--radius);
+  }
+  .btnproject:hover {
+    color: var(--clr-white);
+    background-color: gold;
+    box-shadow: 0px 0px 20px 5px gold;
   }
